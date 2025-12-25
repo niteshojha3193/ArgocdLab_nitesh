@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: startbux-deploy
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels: 
+      app: startbux
+  template:
+    metadata:
+      labels: 
+        app: startbux
+spec:
+  contrainers:
+  - name: startbux
+    image: gariptipici/starbux:0.0.1
+    ports: 
+    - contrainerPort: 80

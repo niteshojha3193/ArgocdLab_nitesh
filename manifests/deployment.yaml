@@ -16,4 +16,4 @@ spec:
        - name: startbux
          image: gariptipici/starbux:0.0.1
          ports: 
-         - containerPort: 80
+         - containerPort: 8080

@@ -12,8 +12,8 @@ spec:
       labels: 
         app: startbux
 spec:
-  contrainers:
+  containers:
   - name: startbux
     image: gariptipici/starbux:0.0.1
     ports: 
-    - contrainerPort: 80
+    - containerPort: 80

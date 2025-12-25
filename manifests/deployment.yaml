@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: startbux-deploy
+  name: netflix-deploy
 spec: 
   replicas: 3
   selector: 
     matchLabels: 
-      app: startbux
+      app: netflix
   template:
     metadata:
       labels: 
-        app: startbux
+        app: netflix
     spec:
       containers:
-       - name: startbux
-         image: nginx:stable-alpine3.23-perl
+       - name: netflix
+         image: shailesh49/netflix
          ports: 
          - containerPort: 80
